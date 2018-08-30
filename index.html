@@ -14,18 +14,11 @@
 	<div data-app id="main">Please wait...</div>
 	<script>
 		window.$docsify = {
-			alias: {
-				'/.*/navbar.md': '/navbar.md',
-				'/.*/sidebar.md': '/sidebar.md',
-			},
-			// load from _navbar.md
-			loadNavbar: true,
-
-			loadNavbar: 'navbar.md',
-			// load from _sidebar.md
-			loadSidebar: true,
-			loadSidebar: 'sidebar.md',
-			
+			executeScript: true,
+            loadSidebar: true,
+            loadNavbar: true,
+            mergeNavbar: true,
+            maxLevel: 4,
 			el: '#main',
 			name: 'BCLLock',
 			// basePath: '/docs/',

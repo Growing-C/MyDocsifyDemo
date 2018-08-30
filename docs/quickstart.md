@@ -1,41 +1,54 @@
-# 快速开始
+# BCLLock
+模块介绍
+# ScreenShot
 
-我们只需在 `index.html` 文件中引入`eagle.sdk.js`文件即可。
+# Add BCLLock to your project
+在project根目录的build.gradle里
+```
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven { url "http://192.168.2.94:10080/repertory/maven/dependency/raw/master/" }
+    }
+```
+在module的build.gradle里
+```
+compile 'com.linkstec.blockchains.bcllock:BCLLock:1.0.2
+```
+其中1.0.2换成最新的版本，或者使用1.+的形式。
+# About this project
 
+# ProGuard
+不需要配置
 
-## 初始化
+# How do I use BCLLock
+### **1. 使用模块**
 
-在`html` `head`内编写监听sdk初始化完成事件。
-
-```javascript
-document.addEventListener("deviceReady", function (e) {});
+根据路由地址,直接启动模块
+```
+ navigateTo("/bcllock/bcllockwebmodule");
+```
+根据路由地址和参数,启动模块
+```
+ navigateTo("/bcllock/bcllockwebmodule", bundle);
 ```
 
-## 引入文件
+# Samples
+开发者自实现
 
-在`html` `head`引入`eagle.sdk.js`, 即初始化完成。
-
-```javascript
-<script src="eagle.sdk.js"></script>
-```
+# Author
+E-MAIN:
 
 
-*index.html*
+# git
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="UTF-8">
-  <script>
-    document.addEventListener("deviceReady", function (e) {});
-  </script>
-  <script src="eagle.sdk.js"></script>
-</head>
-<body>
-</body>
-</html>
-```
+
+
+
+
+
+
+
+
+
 
